@@ -1,0 +1,13 @@
+elasticsearch:
+  host: localhost
+  user: matteo
+  password: manchester
+  index: posts
+  type: external
+  log: trace
+
+telegram:
+  bot:
+    user_id: Espada4
+    username: matteo01bot 
+    token: 186534745:AAHbZybNzfCRjqjDVM6l5tzbCYpg1jE0wxw
