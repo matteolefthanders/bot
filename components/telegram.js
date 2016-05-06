@@ -18,6 +18,31 @@ exports = module.exports = function (config) {
   	bot.sendAudio(fromId,'./audio/ranocchia');
   });
 
+  bot.onText(/\/veronica-lala/, function(msg) {
+    let fromId = msg.from.id;
+    bot.sendPhoto(fromId,'./foto/veronica1.jpg');
+  });
+  bot.onText(/\/veronica-concita/, function(msg) {
+    let fromId = msg.from.id;
+    bot.sendPhoto(fromId,'./foto/veronica2.jpg');
+  });
+  bot.onText(/\/veronica-prova-costume/, function(msg) {
+    let fromId = msg.from.id;
+    bot.sendPhoto(fromId,'./foto/veronica5.jpg');
+  });
+  bot.onText(/\/veronica-violence/, function(msg) {
+    let fromId = msg.from.id;
+    bot.sendPhoto(fromId,'./foto/violence.jpg');
+  });
+  bot.onText(/\/veronica-dodo/, function(msg) {
+    let fromId = msg.from.id;
+    bot.sendPhoto(fromId,'./foto/veronica3.jpg');
+  });
+  bot.onText(/\/veronica-inseparabili/, function(msg) {
+    let fromId = msg.from.id;
+    bot.sendPhoto(fromId,'./foto/veronica4.jpg');
+  });
+
   bot.onText(/\/echo (.+)/, function (msg, match) {
     let fromId = msg.from.id;
     let resp = match[1];
