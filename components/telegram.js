@@ -9,6 +9,15 @@ exports = module.exports = function (config) {
   	let fromId = msg.from.id;
   	bot.getMe()
   	.then(function (a){
+      a['methods'] = {
+        '/ranocchia' : 'epic audio from politinho',
+        '/veronica-lala' : 'when veronica was a teletubbies',
+        '/veronica-concita' : 'when veronica won a tv show',
+        '/veronica-prova-costume' : 'it\'s  veronica ready for the summer?',
+        '/veronica-violence' : 'stop the violence against children',
+        '/veronica-dodo' : 'when veronica was Dodo\'s best friend',
+        '/veronica-inseparabili' : 'veronica and her ex boyfriend'
+      }
   		bot.sendMessage(fromId, JSON.stringify(a));	
   	});
   });
