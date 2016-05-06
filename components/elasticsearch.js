@@ -1,8 +1,9 @@
-var elasticsearch = require('elasticsearch');
+'use strict';
+let elasticsearch = require('elasticsearch');
 
 exports = module.exports = function (config) {
 
-  var client = new elasticsearch.Client({
+  let client = new elasticsearch.Client({
     host: [{
       host: config.elasticsearch.host,
       auth: `${config.elasticsearch.user}:${config.elasticsearch.password}`

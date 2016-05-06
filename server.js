@@ -1,3 +1,3 @@
-
-var ioc = require('./ioc');
-var t = ioc.create('components/telegram');
+'use strict';
+let ioc = require('./ioc');
+let t = ioc.create('components/telegram');
